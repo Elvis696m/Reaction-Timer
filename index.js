@@ -16,7 +16,7 @@ myBtn.addEventListener('click', () => {
         clickBox.style.display = "block";
         message.textContent = "CLICK NOW!";
         startTime = Date.now();
-    }), Math.floor(Math.random() * 4000) + 2000;
+    }, Math.floor(Math.random() * 4000) + 2000);
 })
 clickBox.addEventListener('click', () => {
     let endTime = Date.now();
