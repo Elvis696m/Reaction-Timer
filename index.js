@@ -20,8 +20,11 @@ myBtn.addEventListener('click', () => {
 })
 clickBox.addEventListener('click', () => {
     let endTime = Date.now();
-
     let reactionTime = endTime - startTime;
-
+    if (gameFinished === true) {
+        return;
+    }
     message.textContent = `Your reaction time: ${reactionTime} ms`;
+    gameFinished = true;
 });
+let gameFinished = false;
